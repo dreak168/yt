@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', 'Segoe UI', '微軟正黑體', sans-serif;
+  color: #fff;
+  background: #0c0c1e;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header, main, footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header a[href^="mailto:"] {
+  color: #00ffff;       
+  font-weight: bold;       
+  text-shadow: 0 0 8px #00ffffaa; 
+  transition: color 0.3s ease;
+}
+
+header {
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px #0006;
+}
+
+header img {
+  border-radius: 20%;
+  box-shadow: 0 4px 12px #00ffff55;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffffaa, 0 0 20px #00ffff55;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffffaa;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-btn {
+  padding: 0.6em 2em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #00ffff, #0044ff);
+  box-shadow: 0 0 12px #00ffff80;
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  background: linear-gradient(90deg, #0044ff, #00ffff);
+  box-shadow: 0 0 20px #00ffffcc;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  box-shadow: 0 4px 20px #00f2;
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 90%;
+  max-width: 560px;
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 30px #00f5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.highlight-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.highlight-link::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #00ffff;
+  box-shadow: 0 0 6px #00ffffaa;
+}
+
+/* 新增：取消粗體，讓strong不粗體 */
+.highlight-link strong {
+  font-weight: normal;
+}
+
+.banner-title {
+  font-size: 1.6rem; 
+  margin: 1.5rem 0; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffffaa;
+  text-align: center;
+  font-weight: bold; 
+  font-family: 'Orbitron', 'Segoe UI', '微軟正黑體', sans-serif;
+}
+
+section img {
+  border-radius: 12px;
+  max-width: 100%;
+  box-shadow: 0 4px 16px #0009;
+}
+
+footer {
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  color: #00ffff;
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 6px #00ffffaa;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
